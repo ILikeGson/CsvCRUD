@@ -27,16 +27,14 @@ view - все данные, необходимые для работы с кон
 Например: Customer, CustomerRepository, CustomerController, CustomerView и т.д.
 
 Для репозиторного слоя желательно использовать базовый интерфейс:
-interface GenericRepository<T,ID>
+**interface GenericRepository<T,ID>**
 
-Interface CustomerRepository extends GenericRepository<Customer, Long>
+**Interface CustomerRepository extends GenericRepository<Customer, Long>**
 
-class CsvCustomerRepositoryImpl implements CustomerRepository
+**class CsvCustomerRepositoryImpl implements CustomerRepository**
 
 В рамках данного проекта необходимо активно использовать возможности Stream API и шаблоны проектирования.
-
 Результатом выполнения задания должен быть отдельный слой приложения, реализованного в рамках модуля  Java IO/NIO под названием csv. 
-
 Слой controller должен использовать csv реализацию.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
