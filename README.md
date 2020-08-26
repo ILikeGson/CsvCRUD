@@ -1,14 +1,10 @@
 # CsvCRUD
 Необходимо реализовать консольное CRUD приложение, которое имеет следующие сущности:
 
-`Customer`
----
-`Specialty`
----
-`Account`
----
-`AccountStatus (enum ACTIVE, BANNED, DELETED)`
----
+1.`Customer`
+2.`Specialty`
+3.`Account`
+4.`AccountStatus (enum ACTIVE, BANNED, DELETED)`
 
 В качестве хранилища данных необходимо использовать CSV файлы:
 
