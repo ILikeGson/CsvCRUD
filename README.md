@@ -20,18 +20,18 @@ customers.csv, specialties.csv, accounts.csv
 -------------
 model - POJO классы
 
-```repository - классы, реализующие доступ к текстовым файлам
+repository - классы, реализующие доступ к текстовым файлам
 controller - обработка запросов от пользователя
-view - все данные, необходимые для работы с консолью```
+view - все данные, необходимые для работы с консолью
 
 Например: Customer, CustomerRepository, CustomerController, CustomerView и т.д.
 
 Для репозиторного слоя желательно использовать базовый интерфейс:
-`interface GenericRepository<T,ID>`
+interface GenericRepository<T,ID>
 
-`Interface CustomerRepository extends GenericRepository<Customer, Long>`
+Interface CustomerRepository extends GenericRepository<Customer, Long>
 
-`class CsvCustomerRepositoryImpl implements CustomerRepository`
+class CsvCustomerRepositoryImpl implements CustomerRepository
 
 В рамках данного проекта необходимо активно использовать возможности Stream API и шаблоны проектирования.
 
